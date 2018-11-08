@@ -9,11 +9,12 @@ header{
   width: 100%;
   float: left;
   position: relative;
-  background: #5f2d10;
+  background: #ffffff;
   z-index: 9;
+  border-bottom: 1px solid #b5b5b55e;
 }
 .mobile_nav {
-  background-color: #5f2d10;
+  /*background-color: #5f2d10;*/
   /*position: fixed;*/
   position: relative;
   float: left;
@@ -34,17 +35,18 @@ header{
     /* border-left: 1px solid #f1d942; */
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #2f1600;
     font-size: 12px;
+    font-weight: 600;
 }
 .active{
   /*background-color: #4f260e;*/
-  color: #efd33a !important;
+  color: #c0aa83 !important;
 }
 .mobile_nav li a:hover,
 .mobile_nav .menu-btn:hover {
   /*background-color: #4f260e;*/
-  color: #efd33a;
+  color: #c0aa83;
 }
 
 .mobile_nav .logo {
@@ -151,10 +153,10 @@ header{
 }
 
 .free_sample_button{
-  background: #efd33a;
+  background: #2f1600;
   padding: 10px 30px;
   border-radius: 50px;
-  color: #000000;
+  color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   float: right;
@@ -241,6 +243,21 @@ header{
 /*Start Home Section*/
 
 /*Start Home Section*/
+
+.banner{
+  width: 100%;
+  height: 393px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.banner img{
+  width: 100%;
+  float: left;
+  position: absolute;
+  bottom: 0;
+}
+
 .price{
   width: 100%;
   height: 100%;
@@ -257,31 +274,40 @@ header{
   left: 0;
   right: 0;
   width: 100%;
-  height: 100px;
+  height: 50px;
   margin: auto;
   text-align: center;
 }
 .price_button a{
-  background: #efd33a;
-  padding: 10px 30px;
+  background: #2f1600;
+  padding: 15px 35px;
   border-radius: 50px;
-  color: #000000;
-  font-size: 18px;
-  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 24px;
   -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.62);
   -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.62);
   box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.62);
+  float: left;
+}
+.price_button a span{
+  width: 32px;
+  height: 37px;
+  background-image: url(../images/download_icon_S.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  margin-right: 10px;
 }
 .price_button a:hover{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 .price_button a:focus{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 .price_button a:active{
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   box-shadow:none;
 }
@@ -307,7 +333,218 @@ header{
   color: #fff;
   padding: 15px;
 }
+
+
+
+.k_kup_price{
+  width: 100%;
+  height: auto;
+  float: left;
+  position: relative;
+  padding: 60px 0;
+  background-image: url(../images/k_cup_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.k_kup_price h3{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+}
+.k_kup_price p{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  }
+
+/*Tab Area*/
+.tab {
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+}
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    margin: 0 10px;
+}
+.tab button:hover {
+    border-color: #b89d64;
+    color: #b89d64;
+}
+.tab button.active {
+    border-color: #b89d64;
+    color: #b89d64;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    max-height: 402px;
+    min-height: 400px;
+    overflow-y: auto;
+}
+/*End Tab Area*/
+
+.tabcontent table {
+  width: 100%;
+  height: auto;
+  float: left;
+  position: relative;
+}
+.tabcontent table, th, td{
+  border-bottom: 1px dashed black;
+  border-collapse: collapse;
+  padding: 20px 0 !important;
+  text-align: left;
+}
+.tabcontent table, tr td{
+  border-bottom: 1px dashed black;
+  border-collapse: collapse;
+  padding: 10px 0 !important;
+  text-align: left;
+}
+.tabcontent table tr td img{
+  max-width: 56px;
+}
+
+
+.hotel_filter_price{
+  width: 100%;
+  min-height:800px;
+  background-image: url(../images/hotel_filter_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  float: left;
+  position: relative;
+  padding: 60px 0;
+}
+
+.hotel_filter_price h3{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 36px;
+  color: #000000;
+}
+.hotel_filter_price p{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  }
+.hotel_filter_price_box{
+  width: 100%;
+  float: left;
+  position: relative;
+  margin: 50px 0;
+}
+.hotel_filter_price_img{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.hotel_filter_price_img img{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.hotel_filter_table_title{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.hotel_filter_table_title h1{
+  font-size: 100px;
+  color: #b89d64;
+  margin-top: 0;
+  line-height: 50px;
+}
+.hotel_filter_table_title p{
+  font-size: 24px;
+  color: #2f1600;
+  margin-top: 0;
+  text-align: left;
+  position: absolute;
+  background: #fbfaf6;
+  float: none;
+  top: 36px;
+  left: 60px;
+  max-width: 210px;
+  line-height: 40px;
+}
+.hotel_filter_table{
+  width: 100%;
+  min-height: 356px;
+  max-height: 400px;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+  overflow-x: auto;
+}
+.hotel_filter_table_area{
+  display: inline-flex;
+}
+.hotel_filter_table .table1{
+  width: 1000px;
+  margin-right: 20px;
+}
+.hotel_filter_table .table1 thead{
+  background: #ece8dd
+}
+.hotel_filter_table .table1 thead tr th{
+  padding: 20px 15px !important;
+  border-bottom: 1px solid #ece8dd !important;
+}
+.hotel_filter_table .table1 tbody tr td{
+  padding: 10px 15px !important;
+  background: #ffffff;
+  border-bottom: 1px solid #ece8dd !important;
+}
+.hotel_filter_table .table2{
+  width: 2000px;
+}
+.hotel_filter_table .table2 thead{
+  background: #ece8dd
+}
+.hotel_filter_table .table2 thead tr th{
+  padding: 20px 15px !important;
+  border-bottom: 1px solid #ece8dd !important;
+}
+.hotel_filter_table .table2 tbody tr td{
+  padding: 10px 15px !important;
+  background: #ffffff;
+  border-bottom: 1px solid #ece8dd !important;
+}
 /*End Home Section*/
+
+
+
+
+
 
 /*Start quality page*/
 .quality_banner{
@@ -635,76 +872,65 @@ header{
   width: 100%;
   float: left;
   position: relative;
-  padding: 50px 0;
-  background: #5f2d10;
+  padding: 80px 0;
+  background: #f4f3ef;
 }
 .footer_top h3{
-  color: #ffffff;
-  text-align: center;
+  color: #2f1600;
+  text-align: left;
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 400;
+  margin-top: 0;
 }
 .footer_top p{
-  color: #ffffff;
-  text-align: center;
+  color: #2f1600;
   font-size: 14px;
+  font-weight: 600
 }
 .footer_top ul{
   padding-left: 0;
-  text-align: center;
+  text-align: left;
 }
 .footer_top ul li{
   display: inline-block;
   list-style: none;
-  margin: 0 10px;
+  margin-right: 10px;
 }
-.footer_top ul li a img{
-  margin: 0;
+.footer_top ul li a i{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #2f1600;
+  border-radius: 50%;
+  color: #ffffff;
 }
 .footer_top img{
   display: block;
   margin: auto;
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 .footer_bottom{
   width: 100%;
   float: left;
   position: relative;
-  background: #4f260e;
+  background: #faf9f6;
 }
 .footer_bottom p{
   font-size: 12px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   margin: 0;
   padding: 15px 0;
 }
 .footer_bottom p span{
-  color: #efd33a;
+  color: #2f1600;
 }
 .contact_cont{
   text-align: left !important;
 }
-.contact_cont .address{
-  width: 25px;
-  height: 25px;
-  float: left;
-  position: relative;
-  background-image: url(../images/30.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.contact_cont .email{
-  width: 25px;
-  height: 25px;
-  float: left;
-  position: relative;
-  background-image: url(../images/29.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
+.contact_cont i{
+  margin-right: 5px;
 }
 
 
